@@ -11,7 +11,8 @@ import SwiftUI
 struct PeopleAppChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PeopleTabView()
+                .environmentObject(DisplayModel())
         }
     }
 }

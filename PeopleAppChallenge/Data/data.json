@@ -1,0 +1,32 @@
+[
+    {
+        "name":"dude1",
+        "address":"1 sansome st.",
+        "company":"company1",
+        "yearsOfExperience": 1
+    },
+    {
+        "name":"dude2",
+        "address":"2 sansome st.",
+        "company":"company2",
+        "yearsOfExperience": 2
+    },
+    {
+        "name":"dude3",
+        "address":"3 sansome st.",
+        "company":"company3",
+        "yearsOfExperience": 3
+    },
+    {
+        "name":"dude4",
+        "address":"4 sansome st.",
+        "company":"company4",
+        "yearsOfExperience": 4
+    },
+    {
+        "name":"dude5",
+        "address":"5 sansome st.",
+        "company":"company5",
+        "yearsOfExperience": 5
+    }
+]

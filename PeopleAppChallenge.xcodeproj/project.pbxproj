@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		CBAB3ECC280CDE430055CF3A /* PeopleAppChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3ECB280CDE430055CF3A /* PeopleAppChallengeApp.swift */; };
-		CBAB3ECE280CDE430055CF3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3ECD280CDE430055CF3A /* ContentView.swift */; };
+		CBAB3ECE280CDE430055CF3A /* PeopleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3ECD280CDE430055CF3A /* PeopleTabView.swift */; };
 		CBAB3ED0280CDE450055CF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAB3ECF280CDE450055CF3A /* Assets.xcassets */; };
 		CBAB3ED3280CDE450055CF3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAB3ED2280CDE450055CF3A /* Preview Assets.xcassets */; };
+		CBAB3EDE280CDF550055CF3A /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3EDD280CDF550055CF3A /* People.swift */; };
+		CBAB3EE1280CE0300055CF3A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = CBAB3EE0280CE0300055CF3A /* data.json */; };
+		CBAB3EE3280CE1160055CF3A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3EE2280CE1160055CF3A /* DataService.swift */; };
+		CBAB3EE5280CE26D0055CF3A /* PeopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3EE4280CE26D0055CF3A /* PeopleModel.swift */; };
+		CBAB3EE7280CE3F20055CF3A /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3EE6280CE3F20055CF3A /* PeopleListView.swift */; };
+		CBAB3EEB280CED010055CF3A /* DisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB3EEA280CED010055CF3A /* DisplayModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CBAB3EC8280CDE430055CF3A /* PeopleAppChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleAppChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB3ECB280CDE430055CF3A /* PeopleAppChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppChallengeApp.swift; sourceTree = "<group>"; };
-		CBAB3ECD280CDE430055CF3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBAB3ECD280CDE430055CF3A /* PeopleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTabView.swift; sourceTree = "<group>"; };
 		CBAB3ECF280CDE450055CF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAB3ED2280CDE450055CF3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBAB3EDD280CDF550055CF3A /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		CBAB3EE0280CE0300055CF3A /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		CBAB3EE2280CE1160055CF3A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CBAB3EE4280CE26D0055CF3A /* PeopleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleModel.swift; sourceTree = "<group>"; };
+		CBAB3EE6280CE3F20055CF3A /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		CBAB3EEA280CED010055CF3A /* DisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				CBAB3ECB280CDE430055CF3A /* PeopleAppChallengeApp.swift */,
-				CBAB3ECD280CDE430055CF3A /* ContentView.swift */,
+				CBAB3ED9280CDE4F0055CF3A /* View */,
+				CBAB3EDB280CDE590055CF3A /* Model */,
+				CBAB3EDA280CDE530055CF3A /* ViewModel */,
+				CBAB3EDC280CDE710055CF3A /* Data */,
+				CBAB3EDF280CE01F0055CF3A /* Services */,
 				CBAB3ECF280CDE450055CF3A /* Assets.xcassets */,
 				CBAB3ED1280CDE450055CF3A /* Preview Content */,
 			);
@@ -65,6 +81,48 @@
 				CBAB3ED2280CDE450055CF3A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBAB3ED9280CDE4F0055CF3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB3ECD280CDE430055CF3A /* PeopleTabView.swift */,
+				CBAB3EE6280CE3F20055CF3A /* PeopleListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBAB3EDA280CDE530055CF3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB3EE4280CE26D0055CF3A /* PeopleModel.swift */,
+				CBAB3EEA280CED010055CF3A /* DisplayModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBAB3EDB280CDE590055CF3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB3EDD280CDF550055CF3A /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBAB3EDC280CDE710055CF3A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB3EE0280CE0300055CF3A /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CBAB3EDF280CE01F0055CF3A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBAB3EE2280CE1160055CF3A /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAB3ED3280CDE450055CF3A /* Preview Assets.xcassets in Resources */,
+				CBAB3EE1280CE0300055CF3A /* data.json in Resources */,
 				CBAB3ED0280CDE450055CF3A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAB3ECE280CDE430055CF3A /* ContentView.swift in Sources */,
+				CBAB3EE5280CE26D0055CF3A /* PeopleModel.swift in Sources */,
+				CBAB3EE7280CE3F20055CF3A /* PeopleListView.swift in Sources */,
+				CBAB3ECE280CDE430055CF3A /* PeopleTabView.swift in Sources */,
+				CBAB3EDE280CDF550055CF3A /* People.swift in Sources */,
+				CBAB3EEB280CED010055CF3A /* DisplayModel.swift in Sources */,
 				CBAB3ECC280CDE430055CF3A /* PeopleAppChallengeApp.swift in Sources */,
+				CBAB3EE3280CE1160055CF3A /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
